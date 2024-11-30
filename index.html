@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non_Profit Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #mobileMenu {
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-900 text-white">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <div class="text-2xl font-bold">Non-Profit Test</div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#programs" class="hover:text-gray-300">Programs</a>
+                <a href="#impact" class="hover:text-gray-300">Impact</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </nav>
+
+            <a href="#donate" class="hidden md:block bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">Donate</a>
+
+            <div class="md:hidden">
+                <button id="menuButton" class="focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <nav id="mobileMenu"
+            class="fixed top-0 left-0 w-64 h-full bg-blue-900 text-white z-50 transform transition-transform duration-300">
+            <div class="p-5 flex justify-between items-center">
+                <div class="text-2xl font-bold">Menu</div>
+                <button id="closeButton" class="focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="space-y-4 text-center">
+                <li><a href="#about" class="block py-2 hover:bg-blue-700">About</a></li>
+                <li><a href="#programs" class="block py-2 hover:bg-blue-700">Programs</a></li>
+                <li><a href="#impact" class="block py-2 hover:bg-blue-700">Impact</a></li>
+                <li><a href="#contact" class="block py-2 hover:bg-blue-700">Contact</a></li>
+                <li><a href="#donate" class="block bg-yellow-500 py-2 rounded-lg hover:bg-yellow-400">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="relative bg-cover bg-center h-screen"
+        style="background-image: url('https://images.pexels.com/photos/1231230/pexels-photo-1231230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+        <div class="absolute inset-0 bg-black opacity-75"></div>
+        <div class="relative container mx-auto text-center h-full flex flex-col justify-center items-center text-white">
+            <h1 class="text-5xl font-bold mb-6">Making a Difference Every Day</h1>
+            <p class="text-xl mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eos exercitationem
+                dolorum.</p>
+
+            <a href="#donate" class="hidden md:block bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">Donate
+                Now</a>
+        </div>
+
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">About Us</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae beatae illum dolorum, molestias debitis architecto quisquam ipsa dolor ratione. Provident adipisci debitis voluptatem? Quis saepe asperiores aliquid minus, cum consequatur?</p>
+        </div>
+    </section>
+
+    <section id="programs" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="rounded-md mb-6">
+                    <h3 class="text-xl font-bold mb-4">Community Test</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam sit aut odit a</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="rounded-md mb-6">
+                    <h3 class="text-xl font-bold mb-4">Community Test</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam sit aut odit a</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="rounded-md mb-6">
+                    <h3 class="text-xl font-bold mb-4">Community Test</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam sit aut odit a</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Our Impact</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae beatae illum dolorum, molestias debitis architecto quisquam ipsa dolor ratione. Provident adipisci debitis voluptatem? Quis saepe asperiores aliquid minus, cum consequatur?</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6">
+                    <h3 class="text-3xl text-blue-900 font-bold mb-4">10K+</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam sit aut odit a</p>
+                </div>
+
+                <div class="bg-white p-6">
+                    <h3 class="text-3xl text-blue-900 font-bold mb-4">437K+</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam sit aut odit a</p>
+                </div>
+
+                <div class="bg-white p-6">
+                    <h3 class="text-3xl text-blue-900 font-bold mb-4">1.3M+</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam sit aut odit a</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="py-20 bg-yellow-500 text-white text-center">
+        <h2 class="text-4xl font-bold mb-6">Make a donation</h2>
+        <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum minus ad dolor.</p>
+        <a href="#contact" class="bg-white text-yellow-500 px-8 py-3 text-xl rounded-lg hover:bg-gray-100">Get Involved</a>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Test Test Test. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector('#menuButton')
+        const mobileMenu = document.querySelector('#mobileMenu')
+        const closeButton = document.querySelector('#closeButton')
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.style.transform = 'translateX(0)'
+        })
+
+        closeButton.addEventListener('click', () => {
+            mobileMenu.style.transform = 'translateX(-100%)'
+        })
+    </script>
+</body>
+
+</html>
